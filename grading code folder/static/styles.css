@@ -1,0 +1,79 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #800000; /* Maroon background */
+    color: #ffd700; /* Gold text for contrast */
+}
+
+/* Container Styles */
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: #ffffff; /* White background for the container */
+    border: 1px solid #dee2e6; /* Light grey border to separate from background */
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #ffd700; /* Gold color for the header */
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styles */
+label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #ffd700; /* Gold color for labels */
+}
+
+/* Input and Button Styles */
+input[type="number"], button {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da; /* Light grey border */
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Input Styles */
+input[type="number"] {
+    border-color: #ffd700; /* Gold border for input fields */
+}
+
+/* Button Styles */
+button {
+    background-color: #ffd700; /* Gold button for a call-to-action */
+    color: #800000; /* Maroon text color for contrast */
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e0a800; /* Darker gold for hover effect */
+}
+
+/* Error and Result Styles */
+.error {
+    color: #dc3545; /* Red color for errors */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.result {
+    font-weight: bold;
+    color: #ffd700; /* Gold color for result text */
+    margin-top: 20px;
+}
