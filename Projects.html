@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Table</title>
+    <style>
+        /* Basic reset */
+        body, h1, table, th, td, tr {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* Main container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Table header */
+        .table-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .table-header h1 {
+            font-size: 2.5em;
+            color: #4CAF50;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        td {
+            background-color: #f9f9f9;
+            color: #555;
+        }
+
+        tr:hover td {
+            background-color: #f1f1f1;
+        }
+
+        /* Status Colors */
+        .status-completed {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .status-in-progress {
+            background-color: #ff9800;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .status-pending {
+            background-color: #f44336;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Table Header -->
+        <div class="table-header">
+            <h1>Project Management Table</h1>
+            <p>Overview of ongoing and completed projects</p>
+        </div>
+
+        <!-- Project Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Project Alpha</td>
+                    <td>A web development project focused on creating a new website.</td>
+                    <td>01/01/2024</td>
+                    <td>03/01/2024</td>
+                    <td><span class="status-completed">Completed</span></td>
+                </tr>
+                <tr>
+                    <td>Project Beta</td>
+                    <td>A mobile app development project for an e-commerce platform.</td>
+                    <td>15/02/2024</td>
+                    <td>30/04/2024</td>
+                    <td><span class="status-in-progress">In Progress</span></td>
+                </tr>
+                <tr>
+                    <td>Project Gamma</td>
+                    <td>A market research project for analyzing user behaviors.</td>
+                    <td>01/03/2024</td>
+                    <td>15/05/2024</td>
+                    <td><span class="status-pending">Pending</span></td>
+                </tr>
+                <tr>
+                    <td>Project Delta</td>
+                    <td>An internal tool development project for team collaboration.</td>
+                    <td>01/04/2024</td>
+                    <td>15/06/2024</td>
+                    <td><span class="status-in-progress">In Progress</span></td>
+                </tr>
+                <tr>
+                    <td>Project Epsilon</td>
+                    <td>A research project to develop a new AI algorithm for healthcare.</td>
+                    <td>10/01/2024</td>
+                    <td>10/03/2024</td>
+                    <td><span class="status-completed">Completed</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <p>&copy; 2024 Project Management</p>
+        </div>
+    </div>
+
+</body>
+</html>
